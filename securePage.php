@@ -1,7 +1,7 @@
 <?php
 require_once 'header.php';
 
-if($_SESSION["principal"] || $_SESSION["principal"] == NULL || $_SESSION["principal"] == false)
+if(isset($_SESSION["principle"]) == false || $_SESSION["principle"] == NULL || $_SESSION["principle"] == false) 
 {
-    header("login.html");
+    header("Location: Login.html");
 }
